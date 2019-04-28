@@ -21,9 +21,9 @@ so the project can be layed out into three successive modules.
  basically we used the reduced noise power algoritkm on this file and then find the noise frequnecy (not too precise , but effective) and then it mask these regions on the original file.
  
  ### libraries used:
- -scipy <br>
- -librosa <br>
- -pysndfx(this actually find the debries frequnecy)<br>
- -python_speech_features<br>
+ - scipy <br>
+ - librosa <br>
+ - pysndfx(this actually find the debries frequnecy)<br>
+ - python_speech_features<br>
  
 
