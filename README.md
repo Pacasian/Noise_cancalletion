@@ -10,14 +10,20 @@ so the project can be layed out into three successive modules.
  ### 1. Android Application :
  
  So , the android application will work as a front-end of your project, providing **chat** and **voip** services to our clients. The working schema of the project is :-
- > The app provide one to one chat servuce 
- > The app send the voice message file to the **aws** or **firebase** server along with the receives id.(only 50 percent completed)
- > The app can connect its users through voip over the back-end server.(Future Enhancement)  
+ * The app provide one to one chat service 
+ * The app send the voice message file to the **aws** or **firebase** server along with the receives id.(only 50 percent completed)
+ * The app can connect its users through voip over the back-end server.(Future Enhancement)  
  
  ### 2. AWS back-end server:
  The aws or firebase as mentioned work as an backend for this project. bascially it receives the audio message through api and execute the python script over this message for quality correction.
  
  ### 3.Python script :
- basically we used the reduced noise power algoritkm on this file 
+ basically we used the reduced noise power algoritkm on this file and then find the noise frequnecy (not too precise , but effective) and then it mask these regions on the original file.
+ 
+ ### libraries used:
+ -scipy <br>
+ -librosa <br>
+ -pysndfx(this actually find the debries frequnecy)<br>
+ -python_speech_features<br>
  
 
